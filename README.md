@@ -1,7 +1,7 @@
 # DUT Info2 - FilmProvider
 
-### NOM : DOE
-### Prénom : John
+### NOM : PEREZ
+### Prénom : Florian
 ### Groupe de TP : 
 - [x] 1
 
