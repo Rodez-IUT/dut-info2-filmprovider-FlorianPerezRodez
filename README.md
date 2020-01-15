@@ -2,7 +2,7 @@
 
 ### NOM : PEREZ
 ### Prénom : Florian
-### Groupe de TP : 
+### Groupe de TP :
 - [x] 1
 
 ### 0. Création et initialisation du projet "FilmProvider"
