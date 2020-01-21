@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE librarie [
+        <!ELEMENT librarie (entete, livre+)>
+        <!ELEMENT entete (strong?,em?,img?)>
+            <!ELEMENT strong (#PCDATA)>
+            <!ELEMENT em (#PCDATA)>
+            <!ELEMENT img (#PCDATA)>
+                <!ATTLIST img src CDATA #REQUIRED>
+                <!ATTLIST img title CDATA #REQUIRED>
+        <!ELEMENT livre (titre,auteurs+,description,prix,numISBN)>
+            <!ELEMENT titre (#PCDATA)>
+            <!ELEMENT auteurs (auteur+|)>
+                <!ELEMENT auteur (nom,prénom?)>
+                    <!ELEMENT nom (#PCDATA)>
+                    <!ELEMENT prénom (#PCDATA)>
+            <!ELEMENT description (strong?,em?,img?)>
+            <!ELEMENT prix (#PCDATA)>
+                <!ATTLIST prix tva CDATA "5.5" #REQUIRED>
+            <!ELEMENT numISBN (#PCDATA)>
+        ]>
+
+        Un livre est obligatoirement associé à un numéro ISBN composé de chiffres et de tirets, sans espace.
+        Soit un unique élément , contenant 2 sous-éléments et .
+        Le premier (direction) est semblable à un auteur, avec un nom et un prénom optionnel.
+        Le second (membres) est un texte libre.
+
+        La description est semblable à l'en-tête, texte et balises HTML mêlés.
+        Le prix contient, outre la valeur d'achat du livre, l'indication de la devise (euro ou livre ou dollar, euro par défaut) et du type (HT ou TTC, HT par défaut). On souhaite qu'un attribut 'tva' soit automatiquement fixé à la valeur constante "5.5".
+        Les contenus répétés sont fournis sous forme d'entités paramètres. Il s'agit des nom / prénom d'un auteur ou d'un directeur de collectif, et du texte mêlé de balises HTML de l'en-tête et de la description.
+        On souhaite pour finir disposer d'une entité permettant d'insérer le texte suivant dans l'en-tête : « ©Librairie & Internet 2020 ».
