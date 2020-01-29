@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE librairie SYSTEM "Librairie.dtd">
+<librairie>
+    <entete></entete>
+    <livre numISBN="978-2-2-11-05573-4">
+        <titre> L'îles des Zertes </titre>
+        <titre> L'il </titre>
+        <auteur>
+                <nom>Ponti</nom>
+                <prénom>Claude</prénom>
+        </auteur>
+        <description>Qui est Jules ? C'est un Zerte. Il vit sur une île. Il a un ami, Diouc. Des ennemis, comme le Martabaff, qui tape sur tout ce qu'il trouve. Et une étrange passion pour une brique à qui il offre beaucoup de fleurs. Heureusement, il finira par rencontrer avec Roméotte le véritable amour...</description>
+        <prix>15,30</prix>
+    </livre>
+</librairie>
