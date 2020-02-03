@@ -1,5 +1,8 @@
+<!ENTITY copyright "&#xA9;Librairie &amp; Internet 2020">
+<!ENTITY % personne "(nom, prénom?)">
+<!ENTITY % description "(#PCDATA | em | strong | img)*">
         <!ELEMENT librairie (entete, livre+)>
-        <!ELEMENT entete ((texte|strong|em|img)*)>
+        <!ELEMENT entete %description;>
             <!ELEMENT texte (#PCDATA)>
             <!ELEMENT strong (#PCDATA)>
             <!ELEMENT em (#PCDATA)>
@@ -8,18 +11,17 @@
                 <!ATTLIST img title CDATA #IMPLIED>
         <!ELEMENT livre (titre,(auteur+|collectif),description,prix)>
             <!ELEMENT titre (#PCDATA)>
-            <!ELEMENT auteur &personne;>
+            <!ELEMENT auteur %personne;>
                 <!ELEMENT nom (#PCDATA)>
                 <!ELEMENT prénom (#PCDATA)>
             <!ELEMENT collectif (direction,membres)>
-                <!ELEMENT direction &personne;>
+                <!ELEMENT direction %personne;>
                 <!ELEMENT membres (#PCDATA)>
-            <!ELEMENT description (texte|strong|em|img)?)>
+            <!ELEMENT description %description;>
             <!ELEMENT prix (#PCDATA)>
                 <!ATTLIST prix tva CDATA #FIXED "5.5">
                 <!ATTLIST prix devise (euro|livre|dollar) "euro">
                 <!ATTLIST prix type (HT|TTC) "HT">
             <!ATTLIST livre numISBN NMTOKEN #REQUIRED>
-        <!ENTITY copyright "&#xA9;Librairie &amp; Internet 2020">
-                <!ENTITY %personne "(nom, prénom?)">
+
 
