@@ -14,7 +14,6 @@
                         <th>Titre</th>
                         <th>Résumé</th>
                         <th>Nom et prénom réalisateur</th>
-
                     </tr>
                 </thead>
                 <tbody>
