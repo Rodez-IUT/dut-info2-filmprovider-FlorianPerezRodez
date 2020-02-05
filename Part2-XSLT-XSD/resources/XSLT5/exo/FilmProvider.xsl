@@ -9,12 +9,15 @@
             </head>
             <body>
                 <h1>Liste des films</h1>
-                <xsl:apply-templates select="film"/>
+                <xsl:apply-templates select="film">
+                    <xsl:sort select="attribute::annee"/>
+                </xsl:apply-templates>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="film" >
+
             <xsl:variable name="real"><xsl:value-of select="attribute::id_realisateur"/></xsl:variable>
             <table width="60%">
                 <tr>
