@@ -1,0 +1,16 @@
+<fichier>
+  <!--1 or more repetitions:-->
+  <realisateur id_realisateur="string">
+    <prenom>string</prenom>
+    <nom>string</nom>
+  </realisateur>
+  <!--1 or more repetitions:-->
+  <fichefilm id_film="string" id_realisateur="string" année="string">
+    <titre>string</titre>
+    <resume>
+      <!--Optional:-->
+      <image source="string"/>
+      <text>string</text>
+    </resume>
+  </fichefilm>
+</fichier>
